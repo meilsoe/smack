@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		869864FEFC541059939427AA /* Pods_Smack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99B61CA81635969BEEEE2C01 /* Pods_Smack.framework */; };
 		F907D6751F7F614400F930E6 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F907D6741F7F614400F930E6 /* RoundedButton.swift */; };
+		F907D6771F7F6DA100F930E6 /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F907D6761F7F6DA100F930E6 /* UserDataService.swift */; };
 		F9219DE91F7F4080004CACDB /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9219DE81F7F4080004CACDB /* AuthService.swift */; };
 		F93BF79E1F7B160400AFDABC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93BF79D1F7B160400AFDABC /* AppDelegate.swift */; };
 		F93BF7A31F7B160400AFDABC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F93BF7A11F7B160400AFDABC /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 		99B61CA81635969BEEEE2C01 /* Pods_Smack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C72BA447BBA83FC9B46737B4 /* Pods-Smack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smack.release.xcconfig"; path = "Pods/Target Support Files/Pods-Smack/Pods-Smack.release.xcconfig"; sourceTree = "<group>"; };
 		F907D6741F7F614400F930E6 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		F907D6761F7F6DA100F930E6 /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
 		F9219DE81F7F4080004CACDB /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		F93BF79A1F7B160400AFDABC /* Smack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F93BF79D1F7B160400AFDABC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				F9219DE81F7F4080004CACDB /* AuthService.swift */,
+				F907D6761F7F6DA100F930E6 /* UserDataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 					F93BF7991F7B160400AFDABC = {
 						CreatedOnToolsVersion = 9.0;
 						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -290,6 +294,7 @@
 				F93BF7B71F7B3AB400AFDABC /* ChatVC.swift in Sources */,
 				F907D6751F7F614400F930E6 /* RoundedButton.swift in Sources */,
 				F93BF7B91F7B3ACA00AFDABC /* ChannelVC.swift in Sources */,
+				F907D6771F7F6DA100F930E6 /* UserDataService.swift in Sources */,
 				F93BF7C51F7B6D7D00AFDABC /* CreateAccountVC.swift in Sources */,
 				F9219DE91F7F4080004CACDB /* AuthService.swift in Sources */,
 				F93BF7C31F7B65DA00AFDABC /* LoginVC.swift in Sources */,
@@ -435,10 +440,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Smack/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.Smack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Smack/Supporting Files/Smack-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
@@ -452,10 +461,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Smack/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.Smack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Smack/Supporting Files/Smack-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
